@@ -1,0 +1,22 @@
+{
+  "name": "HANU-MD",
+  "description": "Javascript WhatsApp bot made by HANU MD Tech",
+  "logo": "https://files.catbox.moe/zrg712.png",
+  "keywords": ["HANU MD-BOT"],
+  "success_url": "/",
+  "stack": "container",
+  
+  "env": {
+    "MONGODB_URL": {
+      "description": "MongoDB connection string for database storage",
+      "required": false
+    }
+  },
+
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+    }
+  ],
+  "stack": "heroku-26"
+}
